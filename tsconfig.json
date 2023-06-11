@@ -22,5 +22,5 @@
     "skipLibCheck": true
     },
     "include": ["src"],
-    "exclude": ["node_modules", "dist", "./tsconfig.json"]
+    "exclude": ["node_modules", "dist", "./tsconfig.json"],
 }

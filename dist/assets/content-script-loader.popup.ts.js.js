@@ -13,7 +13,7 @@
     );
     await import(
       /* @vite-ignore */
-      chrome.runtime.getURL("src/main.ts.js")
+      chrome.runtime.getURL("src/popup.ts.js")
     );
   })().catch(console.error);
 
