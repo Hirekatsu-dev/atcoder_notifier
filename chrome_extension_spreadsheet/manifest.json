@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Sample Project",
+  "version": "1.0",
+  "description": "動作確認用です",
+  "action": {
+    "default_title": "actionタイトルです",
+    "default_popup": "popup.html"
+  },
+  "oauth2": {
+    "client_id": "90379382160-s3kk8t5t3n4fnp8dc1qep58cg2hfnpf2.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/spreadsheets"]
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://sheets.googleapis.com/"
+]
+}
