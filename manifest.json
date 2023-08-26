@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "atcoder_notifier",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "js": ["reserve.js"],
+            "matches": [
+                "https://atcoder.jp/contests/*"
+            ],
+            "exclude_matches": [
+                "https://atcoder.jp/contests/*/*"
+            ]
+        },
+        {
+            "js": ["display.js"],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
