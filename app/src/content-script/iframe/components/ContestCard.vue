@@ -36,6 +36,10 @@ function formatDate(d: number) {
 
   return `${year}/${month}/${day}(${weekday}) ${hour}:${minute}`
 }
+
+function onOpen(url: string) {
+  window.open(url)
+}
 </script>
 
 <template>
@@ -51,6 +55,7 @@ function formatDate(d: number) {
       :href="contest.url"
       target="_top"
       rel="noopener noreferrer"
+      @click.prevent.stop="onOpen(contest.url)"
     >
       <span class="font-bold">
         {{ contest.name }}
